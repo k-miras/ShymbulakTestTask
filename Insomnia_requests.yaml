@@ -1,0 +1,314 @@
+_type: export
+__export_format: 4
+__export_date: 2022-08-07T20:52:33.989Z
+__export_source: insomnia.desktop.app:v2022.4.2
+resources:
+  - _id: req_f013b75108d04be78f081bccf0405249
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659901993046
+    created: 1659536086712
+    url: localhost:8080/user
+    name: Insert user
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name":"test1"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d856f28ed5a94fb0ab417d3dfa4f7cb8
+    authentication: {}
+    metaSortKey: -1659536086712
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_38983fc9cd714243b0a069bb837a71df
+    parentId: null
+    modified: 1659536082555
+    created: 1659536082555
+    name: Shymbulak
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_efe67bfcec2d46e8aa80db37621ae65b
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659901860714
+    created: 1659901824943
+    url: localhost:8080/user/62efe566a4378800f2ce7545
+    name: delete user
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1659332926962.7812
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cf662816836843c08a68d32313adc2e5
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659901814221
+    created: 1659536163051
+    url: localhost:8080/user/
+    name: Get all users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1659129767213.5625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ae278052075c4babb5692d3fba6ce0e7
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659904522488
+    created: 1659901756161
+    url: localhost:8080/product
+    name: Insert product
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"type":"product1",
+        	"id":"62f0175ebb829925bd2ab27f",
+        	"price":100
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d856f28ed5a94fb0ab417d3dfa4f7cb8
+    authentication: {}
+    metaSortKey: -1658723447715.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cc031cc6068a41c8af5d30cc57296642
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659901924241
+    created: 1659901918833
+    url: localhost:8080/product
+    name: get all product
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1658317128216.6875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d829808f773d4eb186b46edcdb5b4327
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659889783865
+    created: 1659601701105
+    url: localhost:8080/order/
+    name: Get all orders
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1654660252730.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3f167482f3db412890ee83e30fefdee4
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659903022009
+    created: 1659902432960
+    url: localhost:8080/order
+    name: Pay the order
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        "orderId":"62f01b93520b817986a94fbc",
+        	"isPaid":"true"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_e2432e51f9dc4c0883d4011515f8d784
+    authentication: {}
+    metaSortKey: -1654660252705.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_589796764de3470ebdf4ff0a8a9832da
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659905346672
+    created: 1659601872196
+    url: localhost:8080/cartItem/62f017aebb829925bd2ab280
+    name: Insert cart item
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"productId":"62f0175ebb829925bd2ab27f", 
+        	"quantity":120
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d856f28ed5a94fb0ab417d3dfa4f7cb8
+    authentication: {}
+    metaSortKey: -1654660252680.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e4c656e941df425c8a4e2f1909c6d706
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659903031281
+    created: 1659902293998
+    url: localhost:8080/cartItem/62f017aebb829925bd2ab280
+    name: delete cart item
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"productId":"62f0175ebb829925bd2ab27f"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d856f28ed5a94fb0ab417d3dfa4f7cb8
+    authentication: {}
+    metaSortKey: -1654253933194.8125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0c825317a36741898eff1c89464fb9c4
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659902366636
+    created: 1659902097304
+    url: localhost:8080/cartItem/62f017aebb829925bd2ab280
+    name: get cart item of user
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1653847613708.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_53486d1c1d764e2e9c586660a3a3e1bc
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659902379592
+    created: 1659902376313
+    url: localhost:8080/cartItem
+    name: "get all cart item "
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1653441294222.9375
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_2fb831fb7657f9e377e81af535dd1e29beca3ea2
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659536082583
+    created: 1659536082583
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1659536082583
+    _type: environment
+  - _id: jar_2fb831fb7657f9e377e81af535dd1e29beca3ea2
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659536082588
+    created: 1659536082588
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_66c984c5e7bd49458c77fed9f32342ce
+    parentId: wrk_38983fc9cd714243b0a069bb837a71df
+    modified: 1659536082570
+    created: 1659536082570
+    fileName: Shymbulak
+    contents: ""
+    contentType: yaml
+    _type: api_spec
